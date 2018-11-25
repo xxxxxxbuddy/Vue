@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://vuejs.org/js/vue.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        {{message}}
+    </div>
+
+    <div id="app-2">
+        <span v-bind:title="message">
+            鼠标悬停查看信息
+        </span>
+    </div>
+
+    <div id="app-3">
+        <p v-if="seen">Now you can see me.</p>
+    </div>
+    <button>Hide</button>
+
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
+
+    <div id="app-5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">Reverse</button>
+    </div>
+
+    <div id="app-6">
+        <p>{{message}}</p>
+        <input v-model="message">
+    </div>
+
+    <div id="app-7">
+        <ol>
+            <todo-item></todo-item>
+        </ol>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,8 @@
+div{
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+#app-2{
+    font-size: 30px;
+}
