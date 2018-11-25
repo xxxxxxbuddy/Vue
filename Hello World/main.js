@@ -63,10 +63,18 @@ var app6 = new Vue({
 
 /* 组件注册要在使用前 */
 Vue.component('todo-item', {
-    template: '<li>This is a todo item.</li>'
+    props: ['todo'],
+    template: '<li>{{todo.text}}</li>'
 })
 
 var app7 = new Vue({
-    el: '#app-7'
-})
+    el: '#app-7',
+    data: {
+        department: [
+            {id: 0, text: 'Game Theory'},
+            {id: 1, text: 'Project Management'},
+            {id: 2, text: 'MIS'}
+        ]
+    }
+});
 
