@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Computed Properties</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <link rel="stylesheet" href="../main.css" />
+</head>
+<body>
+    <div id="example">
+        <p>Original message:"{{message}}"</p>
+        <p>Computed reverse message:"{{reversedMessage()}}"</p>
+    </div>
+    <div id="now1">
+        <p>Time is {{getTime()}}</p>
+    </div>
+
+    <div id="now2">
+        <p>Time is {{getTime}}</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
