@@ -17,7 +17,7 @@ The value of 'now' wouldn't update. Because **computed properties are cached bas
 
 In comparison, a method invocation will **always** run the function whenever a re-render happens.
 
-![Computed Properties & Methods](.\ComputedProperties\methods&ComputedProperties.png)
+![Computed Properties & Methods](./ComputedProperties/methods&ComputedProperties.png)
 
 So only if we have an expensive property to calculate, we use **Computed Properties** to cache it in case of calculating it again. Otherwise, we should use **methods**.
 
