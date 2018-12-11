@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://vuejs.org/js/vue.js"></script>
     <link rel="stylesheet" href="../main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
 </head>
 <body>
     <div id="example">
@@ -20,6 +22,23 @@
     <div id="now2">
         <p>Time is {{getTime}}</p>
     </div>
+
+
+    <div id="app1">
+        {{fullName}}
+    </div>
+
+    <div id="app2">
+        {{fullName}}
+    </div>
+
+    <div id="watch-example">
+        <p>Ask a yes/no question:
+        <input v-model="question">
+        </p>
+        <p>{{ answer }}</p>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
